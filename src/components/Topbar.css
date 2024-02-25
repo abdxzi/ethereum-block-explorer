@@ -1,0 +1,44 @@
+.top {
+    width: 100%;
+    color: black;
+    padding: 2rem;
+    justify-content: space-between;
+    --input-border-radius: 20px;
+}
+
+.top h2 {
+    white-space: nowrap;
+}
+
+.search {
+    flex: 1 0 300px;
+    margin: 0 2rem 0 5rem;
+}
+
+.search input{
+    background-color: rgb(234, 234, 234);
+    padding: 0.75rem 1rem;
+    width: 100%;
+    border-radius: var(--input-border-radius) 0px 0px var(--input-border-radius);
+    color: rgb(39, 0, 196);
+}
+.search svg {
+    background-color:rgb(234, 234, 234);
+    border-radius: 0px var(--input-border-radius) var(--input-border-radius) 0px;
+    padding: 8px;
+}
+
+@media (max-width:  745px) {
+   .top {
+        flex-direction: column;
+        --input-border-radius: 8px;
+   }
+   .top h2 {
+    align-self: center;
+   }
+   .search {
+        flex: 0 0;
+        margin: 0;
+        margin-top: 1rem;
+   }
+}

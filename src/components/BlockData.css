@@ -1,0 +1,70 @@
+.block-search, .transactions{
+    margin: 4rem 2rem;
+}
+
+.block-search h3{
+    margin-bottom: 2rem;
+}
+
+.block-table, .transactions-table {
+    width: 100% !important;
+    overflow-x: hidden;
+}
+
+.block-table table, .transactions table {
+    border-spacing: 0;
+}
+
+     
+.block-table th, .block-table td { min-width: 200px;}
+
+.block-table tr:nth-child(odd), .transactions tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.block-search td, .transactions-table td{
+    padding: 0.525rem;
+    white-space: nowrap;
+}
+
+.block-search td:first-child {
+    font-weight: bold;
+}
+
+@media (max-width:  745px) {
+    .block-table, .transactions-table {
+        overflow-x: scroll;
+    }
+    
+}
+
+.transactions-trigger {
+    text-decoration: underline;
+    color: blue;
+    margin-top: 2rem;
+}
+.transactions-trigger:hover {
+    color: rgb(255, 159, 16);
+    cursor: pointer;
+}
+
+.transactions thead {
+    font-weight: bold;
+}
+
+.transactions td { 
+    position: relative;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    z-index: 1;
+}
+
+.transactions-table td{
+    padding: 1rem;
+}
+
+
+.transactions td:hover { 
+    max-width: fit-content;
+}
